@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--声明视图-->
+    <meta  name="viewport" content="width=375,user-scalable=no" >
+    <!--引入外部样式-->
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--头部-->
+    <div class="header">
+        <div class="logo">ToDoList</div>
+        <div class="input">
+            <input type="text" name ="inp" id="write" placeholder="请输入代办事项" />
+        </div>
+    </div>
+<!--内容部分-->
+    <div class="main">
+        <!--正在进行-->
+        <div class="list todo">
+            <h1>
+                <span class="title">正在进行</span>
+                <span class="num">0</span>
+            </h1>
+            <div class="clist">
+                <div class="item">
+                    <span class="checkbox">
+                        <input type="checkbox" name="check" value="">
+                    </span>
+                    <span class="content">
+                        固定的内容啊
+                    </span>
+                    <span class="delete"></span>
+                </div>
+            </div>
+        </div>
+        <!--已经完成-->
+        <div class="list done">
+            <h1>
+                <span class="title">已经完成</span>
+                <span class="num">0</span>
+            </h1>
+            <div class="clist"></div>
+        </div>
+    </div>
+    <!--引入外部js-->
+    <script src="js.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
